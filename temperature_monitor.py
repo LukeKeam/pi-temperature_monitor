@@ -6,11 +6,11 @@ from log_write_to_text_file import log_write_to_text_file
 
 def measure_temperature():
         while True:
-                temp = os.popen("cat /sys/class/thermal/thermal_zone0/temp").readline()
-                temp = (temp.replace("temp=",""))
+                temperature = os.popen("cat /sys/class/thermal/thermal_zone0/temp").readline()
+                temperature = (temperature.replace("temp=",""))
                 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                print(now, temp)
-                log_write_to_text_file('temp: {0}'.format(temp))
+                print(now, temperature)
+                log_write_to_text_file('temp: {0}'.format(temperature))
                 time.sleep(1)
 
 
