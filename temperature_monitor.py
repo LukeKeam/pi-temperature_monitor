@@ -11,6 +11,7 @@ def measure_temperature():
                 temp = (temp.replace("temp=",""))
                 now = datetime.datetime.now()
                 # log_write_to_text_file('msg')
+                print(now, temp)
                 log_write_to_text_file('temp: {0}'.format(temp))
                 time.sleep(60)
 

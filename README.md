@@ -1,6 +1,6 @@
 # link
-https://techgeek.biz/techtips/pi-kiosk-raspberry-pi-kiosk
+https://techgeek.biz/techtips/pi-temperature_monitor
 
-# easy install
-curl -LJO https://raw.githubusercontent.com/LukeKeam/pi-kiosk/master/install.sh && sudo bash ./install.sh
+# easy install & run
+sudo apt-get install git -y && git clone https://github.com/LukeKeam/pi-temperature_monitor && cd pi-temperature_monitor && python3 temperature_monitor.py
 
