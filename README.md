@@ -1,5 +1,5 @@
 # link
-https://techgeek.biz/techtips/pi-temperature_monitor
+https://techgeek.biz/techtips/raspberry-pi-temperature-monitor
 
 # easy install & run
 sudo apt-get install git -y && git clone https://github.com/LukeKeam/pi-temperature_monitor && cd pi-temperature_monitor && python3 temperature_monitor.py
