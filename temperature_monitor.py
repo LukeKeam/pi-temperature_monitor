@@ -9,7 +9,7 @@ def measure_temperature():
                 temperature = os.popen("vcgencmd measure_temp").readline()
                 temperature = (temperature.replace("temp=",""))
                 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                print(now, temperature)
+                print(now, ' Temperature:', temperature)
                 log_write_to_text_file('temp: {0}'.format(temperature))
                 time.sleep(1)
 
