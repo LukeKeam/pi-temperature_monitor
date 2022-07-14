@@ -14,6 +14,5 @@ def measure_temperature():
                 time.sleep(1)
 
 
-
 if __name__ == '__main__':
     measure_temperature()
